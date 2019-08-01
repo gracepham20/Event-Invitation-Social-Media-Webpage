@@ -1,0 +1,52 @@
+<!--buisnessPostings.html, This page's purpose is to create a buisness posting, version 1 5/7/19, Thomas Harrison; integration to Firebase part by Grace Pham; dependencies: background image, firebase database  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>irLFG Business Postings</title>
+  <link rel="stylesheet" href="irLfg.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script src="firebase.js"></script>
+
+  <ul>
+    <li><a href="irlfgHome.html">Home</a></li>
+    <li><a href="registerBusiness.html">Buisness Accounts</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="eventPostings.html">Event Postings</a></li>
+    <li><a href="eventCreation.html">Create Event</a></li>
+
+  </ul> 
+</head>
+
+<body>
+ <center>
+  <h1>Create a Business Event</h1>
+  
+  <div class="event-creation-form">
+    <form class="event-creation-form" action="irLFG.php" method="post">
+        <table>
+          <tr>
+              <td>Name: <input name="event-name" type="text" placeholder="Enter the name of your event"></td>
+              <td>Description: <input name="event-description" type="text" placeholder="Enter a description of your event"></td>
+          </tr>
+          <tr>
+            <td>Time: <input name="event-time" type="text" placeholder="Enter the time which the event will begin"></td>
+            <td>Location: <input name="event-location" type="text" placeholder="Enter the location of the business"></td>
+          </tr>
+          <tr>
+            <td>Number of participants: <input name="event-location" type="text" placeholder="How many people can your event support?"></td>
+            <td>Will people need to pay to enter? (Yes / No) <input name="event-money" type="text" placeholder="Is this a paid event?"></td>
+          </tr>
+        </table><br>
+      <center>Wheelchair Accessible (Optional): <input name="disabled" id="disabled" type="text" placeholder="Yes/No"></center><br>
+        <button onclick="window.location='irlfgHome.html';" type="submit">Submit</button><br>
+    </form>
+
+    <a href="eventCreation.html">Need something to do? Create your posting here!</a><br>
+    <a href="CompanyPostings.html">Company? Create your posting here!</a>
+</center>
+</body>
+</body>
+</html>

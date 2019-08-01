@@ -1,0 +1,47 @@
+<!--registerBusiness, This page's purpose is for a business to register a business account, version 2 5/17/19, Grace Pham, dependancies: background image, firebase database    -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>irLFG Business Registration</title>
+  <link rel="stylesheet" href="irLfg.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script src="firebase.js"></script>
+
+  <ul>
+    <li><a href="irlfgHome.html">Home</a></li>
+    <li><a href="registerBusiness.html">Buisness Accounts</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="eventPostings.html">Event Postings</a></li>
+    <li><a href="eventCreation.html">Create Event</a></li>
+
+  </ul>
+
+</head>
+<body>
+  <center>
+    <div class="contact">
+      <h1>Business Account Registration</h1>
+      
+      <form id="registerbuform">
+          <table>
+            <tr>
+                <td>First Name:<input name="companyname" id="companyname" type="text" placeholder="Company Name"></td>
+                <td>Address:<input name="address" id="address" type="text" placeholder="Company"></td>
+            </tr>
+            <tr>
+              <td>Owner Name:<input name="ownername" id="ownername" type="text" placeholder="CEO/Owner Full Name"></td>
+              <td>Email:<input name="email" id="email" type="text" placeholder="abc@example.com"></td> 
+            </tr>
+           </table>
+           <center>Phone Number:<br><input name="phonenum" id="phonenum" type="text" placeholder="000-000-0000"></center><br>
+      <button onclick="window.location='irlfgHome.html';" type="submit">Submit</button>
+    </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="mainburegist.js"></script>
+  </center>
+</body>
+</html>

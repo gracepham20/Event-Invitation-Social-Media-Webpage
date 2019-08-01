@@ -1,0 +1,50 @@
+<!--irLfg, This page's purpose is to be the home page of the website, explain the purpose of the site and has a interactable map, version 1 5/7/19, Thomas Harrison, integration to Firebase part by Grace Pham, dependencies: background image, firebase database -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>irLFG Home</title>
+  <link rel="stylesheet" href="irLfg.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+  <script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
+  
+  
+  <ul>
+    <li><a href="irlfgHome.html">Home</a></li>
+    <li><a href="registerBusiness.html">Buisness Accounts</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="eventPostings.html">Event Postings</a></li>
+    <li><a href="eventCreation.html">Create Event</a></li>
+
+  </ul>
+
+  <center><h1>Welcome to irLfg!</h1></center>
+</head>
+
+<body>
+  <p><center>irLfg stands for in real life looking for group.</p> 
+  <p>The purpose of this platform is to get people connecting and interacting with each other in their communities in various activities.</p>
+  <p>For example say you want to play soccer at the park but dont know who to invite or if anyone else near by would want to play as well, you could create an event to ask either just your friends or make a public posting meaning anyone could join</center></p>
+
+  <div id='map'></div>
+  
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidHJoNjExIiwiYSI6ImNqc25iMGY2aDBhbG00YW1xczRuMjg1b3cifQ.ua9cDFJcyzKwZ5KzbFvpow';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+
+    // This code adds the locating feature to the maps ui which prompts the user to allow the map to access their latitude and longitude
+    map.addControl(new mapboxgl.GeolocateControl({
+    positionOptions: {
+    enableHighAccuracy: true
+    },
+    trackUserLocation: true
+    }));
+  </script>
+</body>
+
+</html>

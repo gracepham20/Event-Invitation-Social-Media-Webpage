@@ -1,0 +1,55 @@
+<!--eventCreation, This page is for normal users to create events, version 3 5/21/19, Grace Pham, dependencies: background image, firebase database -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>irLFG Event Creation</title>
+  <link rel="stylesheet" href="irLfg.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script src="firebase.js"></script>
+
+  <ul>
+    <li><a href="irlfgHome.html">Home</a></li>
+    <li><a href="registerBusiness.html">Buisness Accounts</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="eventPostings.html">Event Postings</a></li>
+    <li><a href="eventCreation.html">Create Event</a></li>
+  </ul>
+ 
+</head>
+
+<body>
+  <center>
+  
+  <div class="contact">
+    <h1>Create an Event</h1>
+    <form id="createEventform">
+      <table>
+          <tr>
+             <td>Name: <input name="eventname" id="eventname" type="text" placeholder="Name of your event"></td>
+              <td>Description: <input name="description" id="description" type="text" placeholder="Description of your event"></td>
+          </tr>
+          <tr>
+              <td>Time: <input name="time" id="time" type="text" placeholder="Time of your event"></td>
+              <td>Location: <input name="location" id="location" type="text" placeholder="Location of your event"></td>
+          </tr>
+          <tr>
+            <td>Number of participants: <input name="participant" id="participant" type="text" placeholder="How many people are you looking for?"></td>
+            <td>Paid Event? (Yes/ No) <input name="paidevent" id="paidevent" type="text" placeholder="Yes/No"></td>
+          </tr>
+      </table><br>
+      <center>Wheelchair Accessible (Optional): <input name="disabled" id="disabled" type="text" placeholder="Yes/No"></center><br>
+      <button onclick="window.location='irlfgHome.html';" type="submit">Submit</button>
+        </form>
+        <a href="buisnessPostings.html">Local Business? Create your posting here!</a><br>
+        <a href="CompanyPostings.html">Company? Create your posting here!</a>
+  </div>
+  </center>
+  
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

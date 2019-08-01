@@ -1,0 +1,51 @@
+<!--register, tdis page is for normal users to register tdeir accounts, version 2 5/14/19, Grace Pham, dependencies: background image, firebase database-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+  <title>irLFG Registration</title>
+  <link rel="stylesheet" href="irLfg.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script src="firebase.js"></script>
+
+  <ul>
+    <li><a href="irlfgHome.html">Home</a></li>
+    <li><a href="registerBusiness.html">Buisness Accounts</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="eventPostings.html">Event Postings</a></li>
+    <li><a href="eventCreation.html">Create Event</a></li>
+  </ul>
+
+</head>
+<body>
+  <center>
+  <div class="contact">
+    <h1>Register for irLFG</h1>
+    <form id="registerform">
+    <table>
+    <tr>
+      <td>First Name: <input name="Fname" id="Fname" type="text" placeholder="First name"></td>
+      <td>Last Name: <input name="Lname" id="Lname" type="text" placeholder="Last name"></td>
+    </tr>
+    <tr>
+      <td>Email: <input name="email" id="email" type="text" placeholder="abc@example.com"></td>
+      <td>Phone Number: <input name="phonenum" id="phonenum" type="text" placeholder="000-000-0000"></td>
+    </tr>
+    <tr>
+      <td>Age: <input name="age" id="age" type="text" placeholder="Age"></td>
+      <td>Gender: <input name="gender" id="gender" type="text" placeholder="Male/ Female/ Otders"></td>
+    </tr>
+   </table>
+   <center>Password: <br> <input name="password" id="password" type="text" placeholder="Password"></center><br>
+    <button onclick="window.location='irlfgHome.html';" type="submit">Submit</button>
+        </form>
+        
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script src="mainregist.js"></script>
+  </center>
+</body>
+</html>
